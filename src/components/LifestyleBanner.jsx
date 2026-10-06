@@ -77,7 +77,7 @@ export default function LifestyleBanner() {
                 {/* Image Container with organic warm curve */}
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white/80 bg-white group">
                   <img
-                    src="/images/lifestyle-latte.jpg"
+                    src="./images/lifestyle-latte.jpg"
                     alt="Marbled Iced Latte & Roasted Beans"
                     className="w-full h-80 sm:h-96 object-cover group-hover:scale-105 transition-transform duration-700"
                   />

@@ -234,8 +234,8 @@ export default function ReservationAndVideo() {
                   {/* Video Element */}
                   <video
                     ref={videoRef}
-                    src="/coffee-hero.mp4"
-                    poster="/images/brew-guide-video.jpg"
+                    src="./coffee-hero.mp4"
+                    poster="./images/brew-guide-video.jpg"
                     loop
                     muted={isVideoMuted}
                     playsInline
@@ -369,7 +369,7 @@ export default function ReservationAndVideo() {
               ✕
             </button>
             <video
-              src="/coffee-hero.mp4"
+              src="./coffee-hero.mp4"
               controls
               autoPlay
               className="w-full aspect-video object-contain"

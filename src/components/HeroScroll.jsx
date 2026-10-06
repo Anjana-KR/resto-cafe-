@@ -28,7 +28,7 @@ export default function HeroScroll() {
     for (let i = 1; i <= TOTAL_FRAMES; i++) {
       const img = new Image();
       const padIndex = String(i).padStart(3, '0');
-      img.src = `/frames/frame_${padIndex}.jpg`;
+      img.src = `${import.meta.env.BASE_URL}frames/frame_${padIndex}.jpg`;
 
       const onDone = () => {
         loadedCount++;

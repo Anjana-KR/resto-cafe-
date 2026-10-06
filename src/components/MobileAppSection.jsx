@@ -23,7 +23,7 @@ export default function MobileAppSection() {
                 {/* Screen content */}
                 <div className="rounded-[2.5rem] overflow-hidden bg-cafe-cream-50 relative">
                   <img
-                    src="/images/app-mockup.jpg"
+                    src="./images/app-mockup.jpg"
                     alt="Beanora Mobile App Ordering UI"
                     className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700"
                   />

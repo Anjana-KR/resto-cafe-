@@ -28,3 +28,5 @@ dist-ssr
 # Temp files
 hero-video/coffee-hero-original.mp4
 hero-video/test_*.jpg
+
+.vercel
