@@ -15,13 +15,13 @@ for (const f of oldFiles) {
   }
 }
 
-const videoPath = path.resolve('hero-video', 'coffee-hero.mp4');
+const videoPath = path.resolve('hero-video', 'coffee-main.mp4');
 console.log('Extracting frames from:', videoPath);
 
 // Locate ffmpeg from node_modules or system
 const ffmpegBinary = path.resolve('..', 'CocoAura', 'node_modules', 'ffmpeg-static', 'ffmpeg.exe');
 
-const cmd = `"${ffmpegBinary}" -i "${videoPath}" -vf "scale=1280:-1" -r 10 -q:v 4 "${path.join(framesDir, 'frame_%03d.jpg')}" -y`;
+const cmd = `"${ffmpegBinary}" -i "${videoPath}" -vf "scale=1920:-1" -r 15 -q:v 3 "${path.join(framesDir, 'frame_%03d.jpg')}" -y`;
 console.log('Running:', cmd);
 
 execSync(cmd, { stdio: 'inherit' });

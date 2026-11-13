@@ -196,19 +196,19 @@ export default function HeroScroll() {
           className="absolute inset-0 w-full h-full object-cover"
           style={{ 
             imageRendering: '-webkit-optimize-contrast',
+            filter: 'contrast(1.04) saturate(1.06)',
             willChange: 'transform' 
           }}
         />
 
-        {/* Soft Vignette Overlay: Fades smoothly as you scroll into the full video */}
+        {/* Subtle natural ambient gradient for seamless contrast without any box */}
         <div 
           ref={vignetteRef}
-          className="absolute inset-0 pointer-events-none transition-opacity duration-300"
+          className="absolute inset-0 pointer-events-none"
           style={{
-            background: 'linear-gradient(90deg, rgba(245, 241, 234, 0.94) 0%, rgba(245, 241, 234, 0.82) 42%, rgba(245, 241, 234, 0.2) 75%, transparent 100%)'
+            background: 'linear-gradient(90deg, rgba(245, 241, 234, 0.72) 0%, rgba(245, 241, 234, 0.35) 30%, transparent 60%)'
           }}
         />
-        <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-black/35 via-transparent to-black/15" />
 
         {/* Loading Overlay (dismisses as soon as initial frames are ready) */}
         {isPreloading && (
@@ -232,7 +232,7 @@ export default function HeroScroll() {
           </div>
         )}
 
-        {/* Sole Hero Text Section (From Reference Image - NO OTHER TEXTS OVERLAP) */}
+        {/* Sole Hero Text Section (From Reference Image - Clean, No Box) */}
         <div
           ref={heroTextRef}
           className="absolute left-0 top-0 bottom-0 w-full md:w-[60%] lg:w-[50%] flex flex-col justify-center items-start text-left px-6 sm:px-12 lg:px-20 z-20 will-change-transform"
@@ -247,7 +247,7 @@ export default function HeroScroll() {
             {/* Main Headline */}
             <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl font-bold text-cafe-forest tracking-tight leading-[1.08] mb-5">
               <span className="block">Good Coffee Brings</span>
-              <span className="italic text-cafe-caramel underline-accent block">_Better Days_</span>
+              <span className="italic text-cafe-caramel underline-accent block">Better Days</span>
             </h1>
 
             {/* Subtext description */}
